@@ -4,5 +4,5 @@
            Y       0.83      0.99      0.90        85
 
     accuracy                           0.85       123
-     macro avg       0.89      0.77      0.80       123
-     weighted avg       0.87      0.85      0.84       123
+    macro avg       0.89      0.77      0.80       123
+    weighted avg       0.87      0.85      0.84       123
