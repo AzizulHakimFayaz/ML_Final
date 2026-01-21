@@ -103,9 +103,9 @@ print("Encoded X shape:", X.shape)
 
 X_train,X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2 , random_state=42, stratify = y)
 
-c_lr = LogisticRegression(random_state=42)
-c_svm = SVC(kernel='rbf', C=1.0, random_state=42)
-c_rf = RandomForestClassifier(n_estimators=100, random_state=42)
+c_lr = LogisticRegression(random_state=42, class_weight="balanced")
+c_svm = SVC(kernel='rbf', C=1.0, random_state=42, class_weight="balanced")
+c_rf = RandomForestClassifier(n_estimators=100, random_state=42, class_weight="balanced")
 c_gb = GradientBoostingClassifier(n_estimators=100, random_state=42)
 
 
